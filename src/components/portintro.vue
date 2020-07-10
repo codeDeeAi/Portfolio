@@ -5,86 +5,31 @@
         <h3 class="art card-title" :class="{'fade': show}">intro</h3>
         <section></section>
         <div class="container">
-            <article>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis quae eos delectus culpa, consequatur illum unde? Fuga, autem laudantium? 
-                Autem, praesentium. Deleniti ipsum nihil quis ad labore, aperiam omnis sequi!
-            </article>
-             <article>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis quae eos delectus culpa, consequatur illum unde? Fuga, autem laudantium? 
-                Autem, praesentium. Deleniti ipsum nihil quis ad labore, aperiam omnis sequi!
-            </article>
-             <article>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis quae eos delectus culpa, consequatur illum unde? Fuga, autem laudantium? 
-                Autem, praesentium. Deleniti ipsum nihil quis ad labore, aperiam omnis sequi!
-            </article>
-             <article>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis quae eos delectus culpa, consequatur illum unde? Fuga, autem laudantium? 
-                Autem, praesentium. Deleniti ipsum nihil quis ad labore, aperiam omnis sequi!
-            </article>
-             <article>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis quae eos delectus culpa, consequatur illum unde? Fuga, autem laudantium? 
-                Autem, praesentium. Deleniti ipsum nihil quis ad labore, aperiam omnis sequi!
-            </article>
-            <article>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis quae eos delectus culpa, consequatur illum unde? Fuga, autem laudantium? 
-                Autem, praesentium. Deleniti ipsum nihil quis ad labore, aperiam omnis sequi!
-            </article>
-             <article>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis quae eos delectus culpa, consequatur illum unde? Fuga, autem laudantium? 
-                Autem, praesentium. Deleniti ipsum nihil quis ad labore, aperiam omnis sequi!
-            </article>
-             <article>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis quae eos delectus culpa, consequatur illum unde? Fuga, autem laudantium? 
-                Autem, praesentium. Deleniti ipsum nihil quis ad labore, aperiam omnis sequi!
-            </article>
-             <article>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis quae eos delectus culpa, consequatur illum unde? Fuga, autem laudantium? 
-                Autem, praesentium. Deleniti ipsum nihil quis ad labore, aperiam omnis sequi!
-            </article>
-             <article>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis quae eos delectus culpa, consequatur illum unde? Fuga, autem laudantium? 
-                Autem, praesentium. Deleniti ipsum nihil quis ad labore, aperiam omnis sequi!
-            </article>
-            <article>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis quae eos delectus culpa, consequatur illum unde? Fuga, autem laudantium? 
-                Autem, praesentium. Deleniti ipsum nihil quis ad labore, aperiam omnis sequi!
-            </article>
-             <article>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis quae eos delectus culpa, consequatur illum unde? Fuga, autem laudantium? 
-                Autem, praesentium. Deleniti ipsum nihil quis ad labore, aperiam omnis sequi!
-            </article>
-             <article>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis quae eos delectus culpa, consequatur illum unde? Fuga, autem laudantium? 
-                Autem, praesentium. Deleniti ipsum nihil quis ad labore, aperiam omnis sequi!
-            </article>
-             <article>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis quae eos delectus culpa, consequatur illum unde? Fuga, autem laudantium? 
-                Autem, praesentium. Deleniti ipsum nihil quis ad labore, aperiam omnis sequi!
-            </article>
-             <article>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis quae eos delectus culpa, consequatur illum unde? Fuga, autem laudantium? 
-                Autem, praesentium. Deleniti ipsum nihil quis ad labore, aperiam omnis sequi!
-            </article>
-            <article>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis quae eos delectus culpa, consequatur illum unde? Fuga, autem laudantium? 
-                Autem, praesentium. Deleniti ipsum nihil quis ad labore, aperiam omnis sequi!
-            </article>
-             <article>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis quae eos delectus culpa, consequatur illum unde? Fuga, autem laudantium? 
-                Autem, praesentium. Deleniti ipsum nihil quis ad labore, aperiam omnis sequi!
-            </article>
-             <article>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis quae eos delectus culpa, consequatur illum unde? Fuga, autem laudantium? 
-                Autem, praesentium. Deleniti ipsum nihil quis ad labore, aperiam omnis sequi!
-            </article>
-             <article>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis quae eos delectus culpa, consequatur illum unde? Fuga, autem laudantium? 
-                Autem, praesentium. Deleniti ipsum nihil quis ad labore, aperiam omnis sequi!
-            </article>
-             <article>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis quae eos delectus culpa, consequatur illum unde? Fuga, autem laudantium? 
-                Autem, praesentium. Deleniti ipsum nihil quis ad labore, aperiam omnis sequi!
-            </article>
+            <div class="new-sec row">
+                <div class="fav-imgs col-md-6 col-sm-12">
+                    <div class="mr-auto">
+                         <img src="/src/assets/bs/img/4.jpg" alt="">
+                    </div>     
+            </div>
+            <div class="about-text col-md-6 col-sm-12">
+                <article>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus exercitationem excepturi expedita consequuntur magni ipsam laudantium,
+                    repudiandae suscipit! Temporibus aliquam ea recusandae illo nesciunt ex, quidem vero laboriosam? Esse, sit.
+                </article>
+                <article>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus exercitationem excepturi expedita consequuntur magni ipsam laudantium,
+                    repudiandae suscipit! Temporibus aliquam ea recusandae illo nesciunt ex, quidem vero laboriosam? Esse, sit.
+                </article>
+                <article>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus exercitationem excepturi expedita consequuntur magni ipsam laudantium,
+                    repudiandae suscipit! Temporibus aliquam ea recusandae illo nesciunt ex, quidem vero laboriosam? Esse, sit.
+                </article>
+                <article>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus exercitationem excepturi expedita consequuntur magni ipsam laudantium,
+                    repudiandae suscipit! Temporibus aliquam ea recusandae illo nesciunt ex, quidem vero laboriosam? Esse, sit.
+                </article>
+            </div>
+            </div>
         </div>
 
     </div>
@@ -142,9 +87,11 @@ section{
 .container{
     position: relative;
     margin-top: 200vh;
-    background: #fff;
-    padding: 100px;
+    background: #f4f4f4;
+    padding: 100px 70px;
     z-index: 700;
+    box-shadow:  -2px -2px 6px rgba(255, 255, 255, 0.1),
+                     2px 2px 6px rgba(0, 0, 0.8);
 }
 .title{
     position: relative;
@@ -175,6 +122,42 @@ section{
 .fade{
     transition-delay: 5s;
      transition: all 7s ease-in;
+}
+.new-sec{
+    position: relative;
+    height: 100vh;
+    box-shadow:  -2px -2px 6px rgba(255, 255, 255, 0.1),
+                     2px 2px 6px rgba(0, 0, 0.8);
+}
+.fav-imgs{
+    position: sticky;
+    left: 0;
+    padding: 3% 5%;
+    box-shadow:  -4px -4px 8px rgba(255, 255, 255, 0.1),
+                     4px 4px 8px rgba(0, 0, 0.8);
+}
+.fav-imgs img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    margin: auto;
+    box-shadow: inset -6px -6px 10px rgba(255, 255, 255, 0.1),
+                    inset 6px 6px 10px rgba(0, 0, 0.8);
+}
+.about-text{
+    padding: 10% 5%;
+    text-align: left;
+    background: #fff;
+}
+/* .about-text article{
+    padding: 10% 20%;
+    text-align: right;
+} */
+.swiper-container {
+    width: 600px;
+    height: 300px;
 }
 </style>
 

@@ -14,12 +14,6 @@ import store from "./router/store.js";
 import "firebase/auth";
 
 
-
-
-
-
-
-
 Vue.use(PortalVue);
 Vue.use(VueResource);
 Vue.use(VueRouter);
