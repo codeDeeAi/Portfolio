@@ -66,7 +66,7 @@ export default Vue.extend({
     computed: {
     ...mapGetters(["user"]),
     nextRoute() {
-      return this.$route.query.redirect || "/chat";
+      return this.$route.query.redirect || "/home";
     },
   },
   data () {
@@ -97,7 +97,7 @@ export default Vue.extend({
                      console.log(user);
                     // toastr.success('Log In Sucessful'  + ' ' + this.email);
                     alert('Log In Sucessful' + ' ' + this.email );                                        
-                    this.$router.push('/chat');
+                    this.$router.push('/secure');
                 },
                 err => {
                     alert('Invalid Login Details, pls try again');

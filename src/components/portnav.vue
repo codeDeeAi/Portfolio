@@ -1,19 +1,21 @@
 <template>
     <div class="container">
-        <div class="curtain" :class="{'active': shownav}">
+        <div id="zOne" class="curtain" :class="{'active': shownav}">
             <span></span>
             <span></span>
             <span></span>
-                <ul>
+                <ul class="mr-auto">
                     <li><a href="#">Home</a></li>
                     <li><a href="#">About</a></li>
                     <li><a href="#">Services</a></li>
                     <li><a href="#">Portfolio</a></li>
                     <li><a href="#">Contact</a></li>
                 </ul>
-                <div class="toggle"  @click="toggle()"></div>
+                <div id="zOne" class="toggle"  @click="toggle()">
+                    <i id="svg" class="fas fa-home fa-2x"></i>
+                </div>
         </div>
-        <intro></intro>
+        <intro id="zTwo" ></intro>
     </div>
 </template>
 
@@ -49,6 +51,14 @@ export default {
 </script>
 
 <style  scoped>
+/* Z-index styles */
+#zOne{
+    z-index: 1000;
+}
+#zTwo{
+    z-index: 800;
+}
+/* Z-index styles end */
 .container{
     margin: 0;
     padding: 0;
@@ -64,6 +74,7 @@ export default {
   overflow: hidden;
   display: flex;
   align-items: center;
+  z-index: 850;
 }
 .curtain > span{
     position: absolute;
@@ -113,16 +124,19 @@ export default {
     right: 20px;
     width: 50px;
     height: 50px;
-    background: red;
     background-position: 5px;
     z-index: 1000;
     cursor: pointer;
-    transition: o.5s;
+    transition: 0.5s;
 }
-
-.curtain.active .toggle{
-    background: blue;
+.toggle #svg{
+     transform: rotateZ(0deg);
+}
+.curtain.active .toggle{    
     background-position: 5px;
+}
+.curtain.active .toggle #svg{ 
+    transform: rotateZ(180deg);
 }
 
 ul{
@@ -132,7 +146,7 @@ ul{
     visibility: hidden;
     opacity: 0;
     transition-delay: 0s;
-    margin-left: 35%;
+    width: 100%;
 }
 .curtain.active ul{
     visibility: visible;

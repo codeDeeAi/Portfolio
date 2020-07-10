@@ -27,6 +27,7 @@ export default {
 <style  scoped>
 .container{
   height: 100vh;
+  font-family: Nunito Semibold;
 }
 </style>
 

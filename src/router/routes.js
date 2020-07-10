@@ -15,11 +15,6 @@ export default [{
     },
 
     {
-        path: "/profile",
-        component: profile
-    },
-
-    {
         path: "/login",
         component: login
     },

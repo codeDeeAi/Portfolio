@@ -99,7 +99,6 @@ export default {
       VueSimpleSpinner,
       spinner,
       float,
-      cart,
    },
  
   data () {

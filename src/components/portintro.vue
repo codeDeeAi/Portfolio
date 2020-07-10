@@ -1,6 +1,6 @@
 <template>
     <div class="container-fluid" @scroll.passive="backEffect">
-        <h2 class="title card-title" :class="{'active': show}">Welcome to Bada Adeola's Portfolio</h2>
+        <h2 class="title card-title" :class="{'active': show}">Welcome</h2>
         <h3 class="art card-title" :class="{'fade': show}">intro</h3>
         <h3 class="art card-title" :class="{'fade': show}">intro</h3>
         <section></section>
@@ -131,30 +131,32 @@ section{
     top: 0;
     left: 0;
     width: 100%;
-    height: 50vh;
-    background: url(/src/assets/bs/img/t1.png);
+    height: 100vh;
+    z-index: 400;
+    background: url(/src/assets/bs/img/4.jpg);
+    background-size: cover;
     background-attachment: fixed;
     background-repeat: no-repeat;
     clip-path: circle(0px at center);
 }
 .container{
     position: relative;
-    margin-top: 100vh;
+    margin-top: 200vh;
     background: #fff;
     padding: 100px;
+    z-index: 700;
 }
 .title{
     position: relative;
     top: 12rem;
-    z-index: 1;
-    font-size: 3em;
+    z-index: 800;
+    font-size: 4em;
     text-align: center;
+    font-weight: bolder;
     width: 100%;
-    text-transform: uppercase;
+    text-transform: initial;
     transform: rotateY(180deg);
-    transform: rotateZ(180deg);
-    
-    
+    transform: rotateZ(180deg); 
 }
 .active{
     transform: rotateY(360deg);
@@ -165,7 +167,7 @@ section{
 .art{
     position: relative;
     top: 25rem;
-    z-index: 1;
+    z-index: 800;
     font-size: 3em;
     text-align: center;
     width: 100%;
