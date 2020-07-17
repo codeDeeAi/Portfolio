@@ -1,6 +1,6 @@
 <template>
     <div class="container">
-        <div id="zOne" class="curtain" :class="{'active': shownav}">
+        <div  class="curtain" :class="{'active': shownav}">
             <span></span>
             <span></span>
             <span></span>
@@ -11,11 +11,11 @@
                     <li><a href="#">Portfolio</a></li>
                     <li><a href="#">Contact</a></li>
                 </ul>
-                <div id="zOne" class="toggle"  @click="toggle()">
+                <div  class="toggle"  @click="toggle()">
                     <i id="svg" class="fas fa-home fa-2x"></i>
                 </div>
         </div>
-        <intro id="zTwo" ></intro>
+        <intro class="intro"></intro>
     </div>
 </template>
 
@@ -63,7 +63,10 @@ export default {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    min-height: 100vh;
+    /* min-height: 100vh; */
+}
+.container .intro{
+    
 }
 .curtain{
   position: fixed;
@@ -74,7 +77,7 @@ export default {
   overflow: hidden;
   display: flex;
   align-items: center;
-  z-index: 850;
+  z-index: 700;
 }
 .curtain > span{
     position: absolute;
@@ -121,7 +124,7 @@ export default {
 .toggle{
     position: fixed;
     top: 20px ;
-    right: 20px;
+    right: 1px;
     width: 50px;
     height: 50px;
     background-position: 5px;
