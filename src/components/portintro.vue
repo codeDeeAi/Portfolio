@@ -246,8 +246,12 @@ h5{
     margin: 5% auto;
 }
 .fav-imgs ul li a{
+     color: white;
      box-shadow:  -6px -6px 10px rgba(255, 255, 255, 0.1),
                      6px 6px 10px rgba(0, 0, 0.8);
+}
+.fav-imgs ul li a:hover{
+    color: #007bff;
 }
 .fav-imgs ul li a:active{
     box-shadow: inset -3px -3px 6px rgba(255, 255, 255, 0.1),
@@ -372,6 +376,12 @@ h5{
 }
 .footer .footer-icons ul{
     margin: 2% auto;
+}
+.footer .footer-icons ul li a{
+    color: #fff;
+}
+.footer .footer-icons ul li a:hover{
+    color: #007bff;
 }
 .footer .footer-icons ul li:hover{
     color: rgb(23, 20, 167);
