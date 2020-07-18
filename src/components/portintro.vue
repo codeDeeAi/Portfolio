@@ -30,14 +30,12 @@
                         </div>
                         <div>
                             <ul class="row list-unstyled">
-                                <li> <a class="btn" target="_blank" ><i class="fab fa-facebook-f fa-2x mr-auto"></i> </a> </li>
+                                <li> <a class="btn" target="_blank" ><i class="fab fa-linkedin fa-2x mr-auto"></i> </a> </li>
                                 <li> <a class="btn" target="_blank" ><i class="fab fa-instagram fa-2x mr-auto"></i> </a> </li>
                                 <li> <a class="btn" target="_blank" ><i class="fab fa-twitter fa-2x mr-auto"></i></a> </li>
-                                <li> <a class="btn" target="_blank" ><i class="far fa-envelope fa-2x mr-auto"></i></a> </li>
-                                <li><a class="btn" target="_blank" ><i class="fab fa-github fa-2x mr-auto"></i></a></li>
+                                <li> <a class="btn" target="_blank" ><i class="fab fa-github fa-2x mr-auto"></i></a></li>
                             </ul>
                         </div>
-                         <!-- <img src="/src/assets/bs/img/4.jpg" alt=""> -->
                     </div>     
             </div>
             <div class="about-text col-md-6 col-sm-12">
@@ -77,6 +75,20 @@
                 </a>
             </div>
            <port id="portfolio" class="z-port"></port>
+           <div id="foot" class="footer">
+               <div class="footer-icons row mr-auto">
+                   <ul class="row list-unstyled mr-auto">
+                     <li> <a class="btn" target="_blank" ><i class="fab fa-linkedin fa-2x mr-auto"></i> </a> </li>
+                     <li> <a class="btn" target="_blank" ><i class="fab fa-instagram fa-2x mr-auto"></i> </a> </li>
+                     <li> <a class="btn" target="_blank" ><i class="fab fa-twitter fa-2x mr-auto"></i></a> </li>
+                     <li> <a class="btn" target="_blank" ><i class="far fa-envelope fa-2x mr-auto"></i></a> </li>
+                     <li> <a class="btn" target="_blank" ><i class="fab fa-github fa-2x mr-auto"></i></a></li>
+                 </ul>
+               </div>
+               <div class="copyright text-center row">
+                   <p class="text-center">{{ 'Copyright'+ ' ' + '©' + cur() }}  {{ ' ' + copyright }}<a href=" https://instagram.com/mr_.dee" target="_blank">{{ name }}</a></p>
+               </div>
+           </div>
         </div>
 
     </div>
@@ -91,6 +103,8 @@ export default {
     data(){
         return{
            show: false,
+           copyright:' All rights reserved | Designed by ',
+           name:'Bada Adeola O.',
         }
     },
     created(){
@@ -105,7 +119,10 @@ export default {
                     var value = window.scrollY;
                     let section = document.querySelector('section');
                     section.style.clipPath = "circle("+ value +"px at center)";                   
-           } 
+           },
+           cur(){
+                return (new Date().getFullYear());
+                } 
         }
     
 }
@@ -210,12 +227,20 @@ h5{
     color: white;
     padding: 10% 5%;
     background: #222;
-    /* box-shadow:  -4px -4px 8px rgba(255, 255, 255, 0.1),
-                     4px 4px 8px rgba(0, 0, 0.8); */
+}
+.fav-imgs h2{    
+    letter-spacing: 2px;
+    font-weight: bold;
+    text-transform: initial;
+    margin: 15% auto 5%;
+}
+.fav-imgs span{
+    margin: 5% auto 1%;
 }
 .fav-imgs ul{
-    margin: auto;
+    margin:2% auto;
     padding: auto;
+    width: 100%;
 }
 .fav-imgs ul li{
     margin: 5% auto;
@@ -228,16 +253,7 @@ h5{
     box-shadow: inset -3px -3px 6px rgba(255, 255, 255, 0.1),
                     inset 3px 3px 6px rgba(0, 0, 0.8);
 }
-.fav-imgs img{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 80%;
-    margin: auto;
-    box-shadow: inset -6px -6px 10px rgba(255, 255, 255, 0.1),
-                    inset 6px 6px 10px rgba(0, 0, 0.8);
-}
+
 .about-text{
     padding: 5% 5%;
     text-align: left;
@@ -347,6 +363,28 @@ h5{
     letter-spacing: 4px;
     box-shadow:  -6px -6px 10px rgba(255, 255, 255, 0.1),
                      6px 6px 10px rgba(0, 0, 0.8);
+}
+.footer{
+    color: white;
+    margin:auto;
+    box-shadow:  -6px -6px 10px rgba(255, 255, 255, 0.1),
+                     6px 6px 10px rgba(0, 0, 0.8);
+}
+.footer .footer-icons ul{
+    margin: 2% auto;
+}
+.footer .footer-icons ul li:hover{
+    color: rgb(23, 20, 167);
+}
+.footer .copyright p {
+    margin:auto auto 1%;
+    text-align: center;
+    text-transform: uppercase ;
+    letter-spacing: 1px;
+    font-size: small;
+}
+.footer .copyright p a:hover{
+    text-decoration: none;
 }
 </style>
 

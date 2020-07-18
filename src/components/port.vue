@@ -21,8 +21,8 @@
                 </div>
                 <div class="content">
                     <ul>
-                        <li><a class="link-btn btn btn-outline-primary" :href="project.web" target="_blank">Web</a></li>
-                        <li><a class="link-btn btn btn-outline-primary" :href="project.git" target="_blank">GitHub</a></li>
+                        <li><a class="link-btn btn btn-outline-primary" :href="project.web" target="_blank"> <i class="fas fa-globe fa-1x"></i> Web</a></li>
+                        <li><a class="link-btn btn btn-outline-primary" :href="project.git" target="_blank"> <i class="fab fa-github fa-1x"></i> GitHub</a></li>
                     </ul>                    
                 </div>
             </div>             
