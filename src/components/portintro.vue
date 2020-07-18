@@ -6,14 +6,12 @@
             </transition>
             <div class="int dive" :class="{'active': show}">
                 <a>
-                    <span><i class="fas fa-arrow-alt-circle-down fa-2x"></i></span>
-                    <span><i class="fas fa-arrow-alt-circle-down fa-2x"></i></span>
+                    <span><i class="fas fa-angle-double-down fa-2x"></i></span>
+                    <span><i class="fas fa-angle-double-down fa-2x"></i></span>
                     Let's Dive In
                 </a> 
             </div>
        </div>
-        <!-- <h3 class="art card-title" :class="{'fade': show}">intro</h3>
-        <h3 class="art card-title" :class="{'fade': show}">intro</h3> -->
         <section></section>
         <div class="container">
             <div id="about" class="new-sec row">
