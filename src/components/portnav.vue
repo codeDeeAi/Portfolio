@@ -5,11 +5,10 @@
             <span></span>
             <span></span>
                 <ul class="mr-auto">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Portfolio</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="#welcome">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#about">Contact</a></li>
                 </ul>
                 <div  class="toggle"  @click="toggle()">
                     <i id="svg" class="fas fa-home fa-2x"></i>
@@ -167,6 +166,9 @@ ul{
     text-align: center;
     display: block;
     font-family: 'Courier New', Courier, monospace;
+}
+.curtain ul li a:hover{
+    color:#fff;
 }
 .curtain.active{
   z-index: 999;

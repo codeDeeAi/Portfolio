@@ -1,20 +1,22 @@
 <template>
     <div class="container-fluid" @scroll.passive="backEffect">
        <div class="welcome">
-            <h2 class="title card-title" :class="{'active': show}">Welcome</h2>
-            <div class="int bulk" :class="{'fade': show}">
-                <h4 >to</h4>
-                <h3>Bada Adeola's Portfolio</h3>
-            </div>
-            <div class="int dive" :class="{'fade': show}"> 
-                <h5>Let's Dive In</h5>
+            <transition name="fade">
+            <h2 class="title card-title" :class="{'active': show}" >Welcome</h2>
+            </transition>
+            <div class="int dive" :class="{'active': show}">
+                <a>
+                    <span><i class="fas fa-arrow-alt-circle-down fa-2x"></i></span>
+                    <span><i class="fas fa-arrow-alt-circle-down fa-2x"></i></span>
+                    Let's Dive In
+                </a> 
             </div>
        </div>
         <!-- <h3 class="art card-title" :class="{'fade': show}">intro</h3>
         <h3 class="art card-title" :class="{'fade': show}">intro</h3> -->
         <section></section>
         <div class="container">
-            <div class="new-sec row">
+            <div id="about" class="new-sec row">
                 <div class="fav-imgs col-md-6 col-sm-12">
                     <div class="mr-auto">
                         <div class="text-center">
@@ -28,11 +30,11 @@
                         </div>
                         <div>
                             <ul class="row list-unstyled">
-                                <li> <a class="btn" ><i class="fab fa-facebook-f fa-2x mr-auto"></i> </a> </li>
-                                <li> <a class="btn" ><i class="fab fa-instagram fa-2x mr-auto"></i> </a> </li>
-                                <li> <a class="btn" ><i class="fab fa-twitter fa-2x mr-auto"></i></a> </li>
-                                <li> <a class="btn" ><i class="far fa-envelope fa-2x mr-auto"></i></a> </li>
-                                <li><a class="btn" ><i class="fab fa-github fa-2x mr-auto"></i></a></li>
+                                <li> <a class="btn" target="_blank" ><i class="fab fa-facebook-f fa-2x mr-auto"></i> </a> </li>
+                                <li> <a class="btn" target="_blank" ><i class="fab fa-instagram fa-2x mr-auto"></i> </a> </li>
+                                <li> <a class="btn" target="_blank" ><i class="fab fa-twitter fa-2x mr-auto"></i></a> </li>
+                                <li> <a class="btn" target="_blank" ><i class="far fa-envelope fa-2x mr-auto"></i></a> </li>
+                                <li><a class="btn" target="_blank" ><i class="fab fa-github fa-2x mr-auto"></i></a></li>
                             </ul>
                         </div>
                          <!-- <img src="/src/assets/bs/img/4.jpg" alt=""> -->
@@ -74,7 +76,7 @@
                     Projects
                 </a>
             </div>
-           <port class="z-port"></port>
+           <port id="portfolio" class="z-port"></port>
         </div>
 
     </div>
@@ -92,7 +94,8 @@ export default {
         }
     },
     created(){
-        window.addEventListener('scroll', this.backEffect);        
+        window.addEventListener('scroll', this.backEffect); 
+        this.show = true;
     },
     destroyed(){
         window.removeEventListener('scroll', this.backEffect);
@@ -101,8 +104,7 @@ export default {
            backEffect(event){
                     var value = window.scrollY;
                     let section = document.querySelector('section');
-                    section.style.clipPath = "circle("+ value +"px at center)";
-                    this.show = true;
+                    section.style.clipPath = "circle("+ value +"px at center)";                   
            } 
         }
     
@@ -142,12 +144,12 @@ section{
     transition: all 2s ease-in;
 }
 .welcome{
-    margin-top: 13%;
+    margin-top: 20%;
 }
 .title{
     color: #fff;
     position: relative;
-    top: 10rem;
+    top: 0;
     z-index: 800;
     font-size: 4em;
     text-align: center;
@@ -160,7 +162,7 @@ section{
 .int{
     color: #fff;
     position: relative;
-    top: 10rem;
+    top: 15%;
     z-index: 800;
     /* font-size: 4em; */
     text-align: center;
@@ -168,14 +170,7 @@ section{
     width: 100%;
     text-transform: initial;
 }
-.bulk{
-    margin-top: 10%;
-    font-weight: bolder;
-    font-size: 2rem;
-}
-.bulk h3{
-    margin-top: 5%;
-}
+
 .dive{
     margin-top: 15%;
     text-transform: lowercase;
@@ -189,7 +184,7 @@ h5{
     transform: rotateX(90deg);
     transform: rotateZ(360deg);
     transition-timing-function:all .5s ease-in-out;
-    transition: all 5s ease-in-out;
+    transition: 5s;
 }
 .art{
     position: relative;
@@ -264,7 +259,8 @@ h5{
                      3px 3px 6px rgba(0, 0, 0.8);
 
 }
-.proj a{
+.proj a,
+.int a{
     position: relative;
     transition: 2s;
     color: white;
@@ -272,17 +268,21 @@ h5{
     letter-spacing: 2px;
     font-size: 2rem;
 }
-.proj a span{
+.proj a span,
+.int a span{
     position: absolute;
     display: block;
 }
-a span:nth-child(1){
+.int a span{
+    margin-left: -80px;
+}
+.proj a span:nth-child(1){
     top: 0;
     left: -100%;
     width: 100%;
     height: 2px;
     background: linear-gradient(90deg, transparent,#f4f4f4);
-    animation: animate1 2s linear infinite;
+    animation: animate1 4s linear infinite;
 }
 @keyframes animate1{
     0%{
@@ -292,13 +292,13 @@ a span:nth-child(1){
         left: 100%;
     }
 }
-a span:nth-child(2){
+.proj a span:nth-child(2){
     bottom: 0;
     right: -100%;
     width: 100%;
     height: 2px;
     background: linear-gradient(-90deg, transparent,#f4f4f4);
-    animation: animate2 2s linear infinite;
+    animation: animate2 4s linear infinite;
 }
 @keyframes animate2{
     0%{
@@ -308,7 +308,41 @@ a span:nth-child(2){
         right: 100%;
     }
 }
+
+.int a span:nth-child(1){
+    top: -100%;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent,#f4f4f4);
+    animation: animate3 4s linear infinite;
+}
+@keyframes animate3{
+    0%{
+        top: -100%;
+    }
+    50%,100%{
+        top: 100%;
+    }
+}
+.int a span:nth-child(2){
+    top: -100%;
+    right: 0;
+    width: 0%;
+    height: 100%;
+    background: linear-gradient(-90deg, transparent,#f4f4f4);
+    animation: animate4 4s linear infinite;
+}
+@keyframes animate4{
+    0%{
+        top: -100%;
+    }
+    50%,100%{
+        top: 100%;
+    }
+}
 .welcome h2{
+    margin-top: 0;
     text-transform: uppercase;
     letter-spacing: 4px;
     box-shadow:  -6px -6px 10px rgba(255, 255, 255, 0.1),
