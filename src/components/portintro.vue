@@ -19,7 +19,7 @@
             <div id="about" class="new-sec row">
                 <div class="fav-imgs col-md-6 col-sm-12">
                     <div class="mr-auto">
-                        <div class="text-center">
+                        <div class="text-center late">
                              <h2 class="text-center">Welcome</h2>
                         </div>
                         <div class="text-center">
@@ -30,10 +30,10 @@
                         </div>
                         <div>
                             <ul class="row list-unstyled">
-                                <li> <a class="btn" target="_blank" ><i class="fab fa-linkedin fa-2x mr-auto"></i> </a> </li>
-                                <li> <a class="btn" target="_blank" ><i class="fab fa-instagram fa-2x mr-auto"></i> </a> </li>
-                                <li> <a class="btn" target="_blank" ><i class="fab fa-twitter fa-2x mr-auto"></i></a> </li>
-                                <li> <a class="btn" target="_blank" ><i class="fab fa-github fa-2x mr-auto"></i></a></li>
+                                <li> <a class="btn" target="_blank" href="linkedin.com/in/adeola-bada-aiism-a51174124"><i class="fab fa-linkedin fa-2x mr-auto"></i> </a> </li>
+                                <li> <a class="btn" target="_blank" href="https://instagram.com/mr_.dee" ><i class="fab fa-instagram fa-2x mr-auto"></i> </a> </li>
+                                <li> <a class="btn" target="_blank" href="https://twitter.com/adeolabada1"><i class="fab fa-twitter fa-2x mr-auto"></i></a> </li>
+                                <li> <a class="btn" target="_blank" href="https://github.com/codeDeeAi"><i class="fab fa-github fa-2x mr-auto"></i></a></li>
                             </ul>
                         </div>
                     </div>     
@@ -78,11 +78,11 @@
            <div id="foot" class="footer">
                <div class="footer-icons row mr-auto">
                    <ul class="row list-unstyled mr-auto">
-                     <li> <a class="btn" target="_blank" ><i class="fab fa-linkedin fa-2x mr-auto"></i> </a> </li>
-                     <li> <a class="btn" target="_blank" ><i class="fab fa-instagram fa-2x mr-auto"></i> </a> </li>
-                     <li> <a class="btn" target="_blank" ><i class="fab fa-twitter fa-2x mr-auto"></i></a> </li>
-                     <li> <a class="btn" target="_blank" ><i class="far fa-envelope fa-2x mr-auto"></i></a> </li>
-                     <li> <a class="btn" target="_blank" ><i class="fab fa-github fa-2x mr-auto"></i></a></li>
+                     <li> <a class="btn" target="_blank" href="linkedin.com/in/adeola-bada-aiism-a51174124"><i class="fab fa-linkedin fa-2x mr-auto"></i> </a> </li>
+                     <li> <a class="btn" target="_blank" href=" https://instagram.com/mr_.dee" ><i class="fab fa-instagram fa-2x mr-auto"></i> </a> </li>
+                     <li> <a class="btn" target="_blank" href="https://twitter.com/adeolabada1"><i class="fab fa-twitter fa-2x mr-auto"></i></a> </li>
+                     <li> <a class="btn" target="_blank" href="mailto:dunsin.bada@gmail.com" ><i class="far fa-envelope fa-2x mr-auto"></i></a> </li>
+                     <li> <a class="btn" target="_blank" href="https://github.com/codeDeeAi"><i class="fab fa-github fa-2x mr-auto"></i></a></li>
                  </ul>
                </div>
                <div class="copyright text-center row">
@@ -230,8 +230,8 @@ h5{
 }
 .fav-imgs h2{    
     letter-spacing: 2px;
-    font-weight: bold;
-    text-transform: initial;
+    /* font-weight: bold; */
+    text-transform: uppercase;
     margin: 15% auto 5%;
 }
 .fav-imgs span{
