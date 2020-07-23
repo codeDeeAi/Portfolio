@@ -1,6 +1,7 @@
 <template>
     <div class="container">
-        <div  class="curtain" :class="{'active': shownav}">
+
+        <div  class="curtain" :class="{'active': shownav}">  
             <span></span>
             <span></span>
             <span></span>
@@ -43,8 +44,15 @@ export default {
                             this.shownav = true; 
                         }, 500);
                     }
-             }
-        }
+             },
+    //   showMsg(){
+    //         return $('#msg').toast('show');
+    //     },  
+    },
+    // created() {
+    //     this.pop = true;
+    //     return this.showMsg();
+    // },
     
 }
 </script>

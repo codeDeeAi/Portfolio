@@ -4,6 +4,7 @@
             <video autoplay muted loop id="myVideo">
               <source src="/src/assets/bs/img/anim7.mp4" type="video/mp4">
             </video>
+        <!-- The Portfolio --> 
         <port></port>
         
     </div>
@@ -22,9 +23,7 @@ export default {
         }
     },
     methods:{
-      
-        }
-    
+   },    
 }
 </script>
 
@@ -41,5 +40,6 @@ export default {
   min-width: 100%;
   min-height: 100%;
 }
+
 </style>
 
