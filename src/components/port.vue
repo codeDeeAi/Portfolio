@@ -52,13 +52,13 @@ export default {
                     title: 'Twitter',
                     details: "A simple recreation of twitter's landing page with just HTML, CSS, bootstrap and Simple JavaScript",
                     git:'https://github.com/codeDeeAi/Twitter.git',
-                    web:''
+                    web:'/src/others/twitter/index.html'
                 },
                 {
-                    title: 'Bridge of Desmond',
-                    details: "A simple landing page with just HTML, CSS, bootstrap and Simple JavaScript",
+                    title: 'Diamond Bridge of Desmond',
+                    details: "A simple webpage with  HTML, CSS, bootstrap, JavaScript, Vue Js and Materialize CSS ",
                     git:'https://github.com/codeDeeAi/Diamond-Bridge-.git',
-                    web:''
+                    web:'https://www.diamondbridgeofdesmond.com'
                 },
                 {
                     title: 'RyseHub',
@@ -70,12 +70,12 @@ export default {
                     title: 'Sunview',
                     details: "A simple landing page with just HTML, CSS, bootstrap and Simple JavaScript. Created to show the different ways carousels and grids can be used",
                     git:'https://github.com/codeDeeAi/sunny.git',
-                    web:''
+                    web:'/src/others/sunview/index.html'
                 },
                 {
                     title: 'My Portfolio',
                     details: "A landing page with  HTML, CSS , bootstrap, Simple JavaScript and VueJS. Created to show the various designs made by me",
-                    git:'',
+                    git:'https://github.com/codeDeeAi/Portfolio.git',
                     web:''
                 },
             ]

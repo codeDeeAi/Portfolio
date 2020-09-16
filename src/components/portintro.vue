@@ -1,13 +1,13 @@
 <template>
     <div class="container-fluid" @scroll.passive="backEffect">
-       <div class="welcome">
+       <div class="welcome" style=" margin-top:40%;">
             <transition name="fade">
             <h2 class="title card-title" :class="{'active': show}" >Welcome</h2>
             </transition>
             <div class="int dive" :class="{'active': show}">
                 <a>
-                    <span><i class="fas fa-angle-double-down fa-2x"></i></span>
-                    <span><i class="fas fa-angle-double-down fa-2x"></i></span>
+                    <span><i class="fas fa-angle-double-down "></i></span>
+                    <span><i class="fas fa-angle-double-down "></i></span>
                     Let's Dive In
                 </a> 
             </div>
@@ -44,7 +44,7 @@
                     <p>
                         I studied Civil Engineering at Federal University, Oye-Ekiti, Nigeria.
                         My Interest in computers has led me to pursue a career in web development which serves a medium of bringing my ideas to the limelight. <br>
-                        I'm a self taught front-end developer whose interest lies in providing simple web based solutions to  people who need them.
+                        I'm a self taught website developer whose interest lies in providing simple web based solutions to  people who need them.
                     </p>
                     <br>
                     <span class="head"><b>Skills</b> </span>
@@ -52,9 +52,9 @@
                     <p>
                        <ul>
                            <li>Business Analysis</li>
-                           <li>Good knowledge of HTML, CSS, JavaScript, VueJS</li>
+                           <li>Good knowledge of HTML, CSS, JavaScript, VueJS, Php, SQL</li>
                            <li>Good understanding of Version Control (Git and GitHub)</li>
-                           <li>Adequate understanding of Bootstrap and it's components</li>
+                           <li>Adequate understanding of Bootstrap and Materialize CSS</li>
                            <li>Good Knowledge of Firebase</li>
                            <li>Manual testing of web-based applications</li>
                            <li>Learn Fast and open to more learning opportunities</li>
@@ -177,7 +177,7 @@ section{
 .int{
     color: #fff;
     position: relative;
-    top: 15%;
+    /* top: 15%; */
     z-index: 800;
     /* font-size: 4em; */
     text-align: center;
